@@ -1,0 +1,6 @@
+* Segmented Line Chart Type for Chartist.js
+
+I needed to be able to address *line segments* in a chart, rather than just set a threshold as in the threshold plugin.  It seemed easiest to make a new chart type. 
+
+What I have here is just proof of concept code; several values are hard-coded, and also the line segments should probably be proper instantiations of ~Chartist.series~ rather than just ad-hoc objects that happen to work with Chartist as-is. I'm not sure yet whether this is of any use to anyone else, so am just temporarily putting here in its own repo while I see whther anyone else would want such a tool, & therefore make the work of adding to Chartist or providing as some kind of a plugin worthwhile.  
+
