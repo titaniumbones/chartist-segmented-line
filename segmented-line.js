@@ -176,7 +176,7 @@
           meta: Chartist.getMetaData(segment, valueIndex) //  value.meta// Chartist.getMetaData(series, valueIndex)
         });
       });
-    console.log(pathCoordinates, pathData);
+    // console.log(pathCoordinates, pathData);
 
   }
 
@@ -255,7 +255,7 @@
             segParent = {seriesElement, rect:chartRect, axisX, axisY, data, seriesIndex};
       //segments.forEach( (seg, index) => drawSegment (seg, index, segParent));
       //data.normalized.series[seriesIndex].forEach(function(value, valueIndex) {
-      console.log(segments);
+      // console.log(segments);
       let testCase;
       // use arrow function to avoid binding `this`; segments aren't proper chartist objs
       segments.forEach( function makeSegElements (segment, segmentIndex)  {
@@ -268,7 +268,7 @@
           //'ct:meta': Chartist.serialize(series.meta) // no meta data for this yet
         });
         segment.points[0] === testCase ? console.log(`oh no! first element of segment ${segmentIndex} = the one before`) : testCase = segment.points[0];
-        console.log(testCase);
+        // console.log(testCase);
         // Use series class from series data or if not set generate one
         segmentElement.addClass([
           options.segmentClassPrefix + segment.name,
@@ -307,7 +307,7 @@
       // Interpolating path where pathData will be used to annotate each path element so we can trace back the original
       // index, value and meta data
       var segmentPath = smoothing(segmentPathCoordinates, segmentPathData);
-        console.log(`SEGMENT PATH ELEMTNST HAS LENGTH ${segmentPath.pathElements.length}`)
+        // console.log(`SEGMENT PATH ELEMTNST HAS LENGTH ${segmentPath.pathElements.length}`)
       // If we should show points we need to create them now to avoid secondary loop
       // Points are drawn from the pathElements returned by the interpolation function
       // Small offset for Firefox to render squares correctly
